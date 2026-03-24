@@ -4,7 +4,7 @@ Graph-Augmented Structural Ensemble (GASE) is a structure-first retrieval pipeli
 
 ## Status
 
-This repository is in alpha. Interfaces, data formats, and evaluation scripts may change while the core indexing and retrieval pipeline is still being refined.
+This is a WIP approach. This repository is in alpha. Interfaces, data formats, and evaluation scripts may change while the core indexing and retrieval pipeline is still being refined.
 
 ## What the project does
 
