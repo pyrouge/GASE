@@ -1,0 +1,104 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gase"
+version = "0.1.0"
+description = "Graph-Augmented Structural Ensemble (GASE) - A structure-first RAG system"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "GASE Authors", email = "gase@example.com"}
+]
+keywords = ["rag", "retrieval", "graph", "embeddings", "nlp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    # Core dependencies
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0",
+    
+    # Document parsing
+    "docling>=1.6.0",
+    
+    # Vector store
+    "qdrant-client>=1.7.0",
+    
+    # Embeddings (local)
+    "sentence-transformers>=2.2.0",
+    
+    # Keyword search
+    "bm25s>=0.3.0",
+    "tokenizers>=0.13.0",
+    
+    # Graph
+    "networkx>=3.1",
+    
+    # Evaluation
+    "ragas>=0.1.0",
+    
+    # Utilities
+    "structlog>=23.1.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    
+    # Testing
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "pytest-xdist>=3.0",
+    "ipython>=8.0",
+]
+
+docs = [
+    "sphinx>=5.0",
+    "sphinx-rtd-theme>=1.0",
+    "myst-parser>=0.18",
+]
+
+[tool.setuptools]
+packages = ["gase"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "N", "W"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra --strict-markers --tb=short"
+markers = [
+    "unit: Unit tests",
+    "integration: Integration tests",
+    "slow: Slow tests",
+]

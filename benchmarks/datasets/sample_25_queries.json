@@ -1,0 +1,29 @@
+[
+  {"id": 1, "doc_name": "financial_report_2023.pdf", "query": "What was net income in 2023?", "expected_terms": ["net income", "$450", "450m"]},
+  {"id": 2, "doc_name": "financial_report_2023.pdf", "query": "How much revenue did the company report in 2023 vs 2022?", "expected_terms": ["$1,950", "$1,585", "revenue"]},
+  {"id": 3, "doc_name": "financial_report_2023.pdf", "query": "What was Q3 2023 revenue?", "expected_terms": ["q3 2023", "$520", "revenue"]},
+  {"id": 4, "doc_name": "financial_report_2023.pdf", "query": "What was the operating margin?", "expected_terms": ["operating margin", "23.1%"]},
+  {"id": 5, "doc_name": "financial_report_2023.pdf", "query": "How much cash and equivalents were reported?", "expected_terms": ["cash", "$1.2b", "1.2b"]},
+  {"id": 6, "doc_name": "financial_report_2023.pdf", "query": "What risk factors were identified for 2024?", "expected_terms": ["risk factors", "competition", "currency", "interest rate"]},
+  {"id": 7, "doc_name": "financial_report_2023.pdf", "query": "What is the 2024 revenue growth outlook?", "expected_terms": ["15-18%", "outlook", "revenue growth"]},
+  {"id": 8, "doc_name": "financial_report_2023.pdf", "query": "What was total debt and average interest rate?", "expected_terms": ["$2.5b", "3.5%", "debt"]},
+  {"id": 9, "doc_name": "financial_report_2023.pdf", "query": "What was EPS in 2023?", "expected_terms": ["eps", "$2.25"]},
+
+  {"id": 10, "doc_name": "research_paper_ai.pdf", "query": "What improvement did GASE achieve over baselines?", "expected_terms": ["23% improvement", "context precision"]},
+  {"id": 11, "doc_name": "research_paper_ai.pdf", "query": "Which prior approaches are discussed in related work?", "expected_terms": ["graphrag", "lightrag", "hirag", "dpr", "colbert"]},
+  {"id": 12, "doc_name": "research_paper_ai.pdf", "query": "How does the paper parse documents structurally?", "expected_terms": ["docling", "breadcrumb", "hierarchy"]},
+  {"id": 13, "doc_name": "research_paper_ai.pdf", "query": "What are the three retrieval signals in the method?", "expected_terms": ["bm25", "dense embeddings", "graph traversal", "multi-signal"]},
+  {"id": 14, "doc_name": "research_paper_ai.pdf", "query": "What is the fusion formula used in GASE?", "expected_terms": ["r(n)", "alpha", "beta", "gamma", "authority"]},
+  {"id": 15, "doc_name": "research_paper_ai.pdf", "query": "Which datasets were used for evaluation?", "expected_terms": ["financebench", "cuad"]},
+  {"id": 16, "doc_name": "research_paper_ai.pdf", "query": "What context precision did the paper report?", "expected_terms": ["78%", "55%", "context precision"]},
+  {"id": 17, "doc_name": "research_paper_ai.pdf", "query": "What are the future work directions?", "expected_terms": ["entity graph overlay", "multi-document qa", "auto-tuning"]},
+
+  {"id": 18, "doc_name": "contract_terms.pdf", "query": "Who are the two parties in the agreement?", "expected_terms": ["techcorp", "clientco", "parties"]},
+  {"id": 19, "doc_name": "contract_terms.pdf", "query": "What is included in the scope of services?", "expected_terms": ["system design", "development", "testing", "deployment"]},
+  {"id": 20, "doc_name": "contract_terms.pdf", "query": "What is the base monthly fee?", "expected_terms": ["$150,000", "per month", "base fees"]},
+  {"id": 21, "doc_name": "contract_terms.pdf", "query": "What is the billing rate for additional hours?", "expected_terms": ["$200 per hour", "additional development hours"]},
+  {"id": 22, "doc_name": "contract_terms.pdf", "query": "When is payment due after invoice?", "expected_terms": ["30 days", "payment is due"]},
+  {"id": 23, "doc_name": "contract_terms.pdf", "query": "How are expenses reimbursed?", "expected_terms": ["cost plus 10%", "expenses", "reimbursed"]},
+  {"id": 24, "doc_name": "contract_terms.pdf", "query": "What is termination notice for convenience?", "expected_terms": ["terminate for convenience", "30 days written notice"]},
+  {"id": 25, "doc_name": "contract_terms.pdf", "query": "What is the cure period for termination for cause?", "expected_terms": ["10 days cure period", "material breach"]}
+]
