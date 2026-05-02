@@ -1,4 +1,4 @@
-# GASE
+# GASE Graph-Augmented Structural Ensemble 
 
 Graph-Augmented Structural Ensemble (GASE) is a structure-first retrieval pipeline for document-heavy retrieval-augmented generation workloads. It combines semantic retrieval, lexical retrieval, and structural graph expansion so that documents can be searched by meaning, exact phrasing, and document hierarchy at the same time.
 
